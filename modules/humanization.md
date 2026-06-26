@@ -47,4 +47,4 @@ Do not apologize. Rewrite again:
 2. Replace it with a scene-based paragraph.
 3. Cut one abstract conclusion.
 4. Add one difficult, specific judgment.
-5. Rerun [AI_CHECK.md](AI_CHECK.md).
+5. Rerun [ai-check.md](ai-check.md).

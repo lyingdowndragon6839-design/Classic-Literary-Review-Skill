@@ -1,6 +1,6 @@
-# 工作流
+# 工作流程
 
-这个工作流把读后感写作拆成一连串小决定。每一步都有输入和输出，避免 Agent 直接跳到成稿。
+读后感写作不是从“成稿”开始，而是从一串可检查的小决定开始：读到了什么、要抓住哪个判断、哪些情节能支撑它、哪些表达需要删掉。
 
 ## Agent 协作
 
@@ -21,9 +21,9 @@ flowchart TD
 
 | Agent | 职责 | 输入 | 输出 | 什么时候重跑 |
 |---|---|---|---|---|
-| Research Agent | 搜索并筛选外部资料 | 作品、目标、是否联网 | Research Summary | 来源太少、重复、打不开 |
+| Research Agent | 搜索并筛选外部资料 | 作品、目标、联网许可 | Research Summary | 来源太少、重复、打不开 |
 | Style Learning Agent | 学写法，不学句子 | Research Summary | Style Bank | 初稿像模板文 |
-| Idea Agent | 选一个主判断 | 用户感受、资料摘要 | Main Judgment | 判断太大、太常见 |
+| Idea Agent | 选一个主判断 | 用户感受、资料摘要 | Main Judgment | 判断太大或太常见 |
 | Outline Agent | 把判断拆成结构 | 主判断、证据 | Outline | 剧情复述过多 |
 | Writer Agent | 写初稿 | Outline、Style Bank | Draft | 初稿没有用户声音 |
 | Reviewer Agent | 挑结构和文学问题 | Draft | Reviewer Notes | 问题属于主判断层面 |
@@ -54,9 +54,9 @@ flowchart TD
 sequenceDiagram
     participant U as User
     participant A as Agent
-    U->>A: 作品、字数、读后感场景、已有感受
-    A->>A: 判断用户是否真的有阅读体验
-    A->>A: 保留用户原始感受或建立理解框架
+    U->>A: 作品、字数、场景、已有感受
+    A->>A: 判断用户是否有真实阅读体验
+    A->>A: 保留原始感受或建立理解框架
     A->>A: 联网搜索外部评论
     A->>A: 总结常见观点和俗套风险
     A->>A: 提炼一个主判断
@@ -66,13 +66,15 @@ sequenceDiagram
     A->>U: 最终稿 + 简短过程说明
 ```
 
+## 常见分支
+
 ### 用户有真实阅读体验
 
-优先保留。比如“我读到老牛那里很难受”，比“生命意义”这种大词更有价值。搜索资料可以帮助深化这句话，但不能把它替换掉。
+优先保留。比如“我读到老牛那里很难受”，比“生命意义”这种大词更有价值。外部评论可以帮助深化这句话，但不能盖住它。
 
 ### 用户没有读完书
 
-不要伪装完整读后感。先做理解框架：人物关系、主要冲突、后续阅读要注意的问题、读完后可能写的角度。
+不要伪装完整读后感。先做阅读框架：人物关系、主要冲突、后续阅读要注意的问题、读完后可能写的角度。
 
 ### 用户已有草稿
 
@@ -99,3 +101,5 @@ sequenceDiagram
 
 ## Final Essay
 ```
+
+更严格的交付格式见 [docs/output-contracts.md](docs/output-contracts.md)。

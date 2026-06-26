@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.orig
+
+# Local environments
+.env
+.env.*
+.venv/
+venv/
+__pycache__/
+
+# Node or build artifacts, if tooling is added later
+node_modules/
+dist/
+build/

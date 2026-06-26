@@ -1,8 +1,10 @@
 # Maintenance Guide
 
-## When Adding A New Example
+这个文件给维护者使用。新增内容时先判断它是否真的改进写作流程，而不是让仓库显得更庞大。
 
-Use [assets/templates/example_case.md](../assets/templates/example_case.md).
+## Adding A New Example
+
+Use [assets/templates/example-case.md](../assets/templates/example-case.md).
 
 Required sections:
 
@@ -17,22 +19,32 @@ Required sections:
 - 修改过程
 - 最终版本
 
-## When Updating The Workflow
+## Updating The Workflow
 
-Update these files together:
+Update these files together when the core workflow changes:
 
-1. [WORKFLOW.md](../WORKFLOW.md)
-2. [SKILL.md](../SKILL.md)
-3. [QUALITY_CHECK.md](../QUALITY_CHECK.md)
-4. [README.md](../README.md)
-5. [DECISION_TREE.md](../DECISION_TREE.md)
-6. [PROMPTS.md](../PROMPTS.md)
+| File | Why |
+|---|---|
+| [workflow.md](../workflow.md) | Public workflow overview |
+| [skill.md](../skill.md) | Loading order and required modules |
+| [quality-check.md](../quality-check.md) | Delivery and repository audit checklist |
+| [README.md](../README.md) | First-reader navigation |
+| [modules/decision-tree.md](../modules/decision-tree.md) | Routing behavior |
+| [modules/prompt-library.md](../modules/prompt-library.md) | Copyable prompts |
 
 ## Style Consistency
 
 - Use tables for protocols.
 - Use Mermaid for process diagrams.
-- Use callouts for hard rules.
+- Use callouts sparingly and only for hard rules.
 - Keep modules actionable.
 - Avoid long motivational prose.
 - Keep filenames exactly as linked in README. Case matters on GitHub.
+
+## Release Checklist
+
+- [ ] File names use lowercase kebab-case, except GitHub standard files.
+- [ ] Links pass local audit.
+- [ ] README, examples index, and module index are current.
+- [ ] `CHANGELOG.md` records the change.
+- [ ] `git status --short` only shows intended files.
