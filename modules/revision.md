@@ -2,8 +2,9 @@
 
 Revision is where a generated-looking draft becomes a piece of writing.
 
-The first draft usually explains too much, summarizes too often, and ends too neatly. Revision
-creates pressure: what can be cut, what needs a scene, where the user's own voice should return.
+The first draft usually explains too much, summarizes too often, and ends too ne
+atly. Revision creates pressure: what can be cut, what needs a scene, where the
+user's own voice should return.
 
 ## Revision Passes
 

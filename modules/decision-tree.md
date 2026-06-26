@@ -1,7 +1,7 @@
 # Decision Tree
 
-Use this file when the user request is unclear, incomplete, or not a standard “write a full
-reading response” task.
+Use this file when the user request is unclear, incomplete, or not a standard “
+write a full reading response” task.
 
 ## Main Routing
 

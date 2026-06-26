@@ -2,7 +2,8 @@
 
 一个面向中文读后感和文学长评的写作 Skill。
 
-它不追求“一句话生成一篇文章”。它把读后感写作拆成研究、风格学习、主判断、结构、初稿、审稿、改稿和提交前检查，让文章尽量保留真实阅读痕迹。
+它不追求“一句话生成一篇文章”。它把读后感写作拆成研究、风格学习、主判断、结构、
+初稿、审稿、改稿和提交前检查，让文章尽量保留真实阅读痕迹。
 
 ## Table of Contents
 
@@ -64,7 +65,9 @@ git clone https://github.com/lyingdowndragon6839-design/Classic-Literary-Review-
 cd Classic-Literary-Review-Skill
 ```
 
-如果你的工具链要求固定入口文件，请把 [skill.md](skill.md) 作为 Skill 说明入口读取。不同宿主对文件名大小写的要求可能不同；本仓库按 GitHub 文档规范统一使用小写项目文件名。
+如果你的工具链要求固定入口文件，请把 [skill.md](skill.md) 作为 Skill 说明入口读取。
+不同宿主对文件名大小写的要求可能不同；本仓库按 GitHub 文档规范统一使用小写项目文
+件名。
 
 ## 如何使用
 
@@ -98,8 +101,8 @@ cd Classic-Literary-Review-Skill
 .
 ├── README.md
 ├── LICENSE
-├── CHANGELOG.md
-├── CONTRIBUTING.md
+├── changelog.md
+├── contributing.md
 ├── skill.md
 ├── workflow.md
 ├── usage.md
@@ -156,11 +159,13 @@ flowchart TD
 
 ## Roadmap
 
-当前版本已经完成核心工作流、模块拆分、示例整理和仓库工程化。后续维护计划见 [docs/roadmap.md](docs/roadmap.md)。
+当前版本已经完成核心工作流、模块拆分、示例整理和仓库工程化。
+后续维护计划见 [docs/roadmap.md](docs/roadmap.md)。
 
 ## Contributing
 
-欢迎提交 Issue 或 Pull Request。新增内容请保持克制：优先修正流程、补充真实案例、改善文档链接和检查清单。贡献说明见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎提交 Issue 或 Pull Request。新增内容请保持克制：优先修正流程、补充真实案例、
+改善文档链接和检查清单。贡献说明见 [contributing.md](contributing.md)。
 
 ## License
 

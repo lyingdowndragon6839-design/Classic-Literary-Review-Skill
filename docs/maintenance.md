@@ -1,6 +1,7 @@
 # Maintenance Guide
 
-这个文件给维护者使用。新增内容时先判断它是否真的改进写作流程，而不是让仓库显得更庞大。
+这个文件给维护者使用。新增内容时先判断它是否真的改进写作流程，
+而不是让仓库显得更庞大。
 
 ## Adding A New Example
 
@@ -46,5 +47,5 @@ Update these files together when the core workflow changes:
 - [ ] File names use lowercase kebab-case, except GitHub standard files.
 - [ ] Links pass local audit.
 - [ ] README, examples index, and module index are current.
-- [ ] `CHANGELOG.md` records the change.
+- [ ] `changelog.md` records the change.
 - [ ] `git status --short` only shows intended files.

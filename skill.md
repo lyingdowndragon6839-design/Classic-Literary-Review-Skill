@@ -30,7 +30,8 @@ When this skill triggers, read the files that match the task:
 14. [modules/reviewer.md](modules/reviewer.md)
 15. [quality-check.md](quality-check.md)
 
-Read only the relevant file from [examples/](examples/) when the target work matches or closely resembles an existing example.
+Read only the relevant file from [examples/](examples/) when the target work matches or closely re
+sembles an existing example.
 
 ## Core Rule
 

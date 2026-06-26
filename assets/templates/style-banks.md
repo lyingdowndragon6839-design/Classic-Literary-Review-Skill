@@ -1,6 +1,7 @@
 # Style Banks
 
-Use this template to record writing methods. Do not store distinctive sentences from source articles.
+Use this template to record writing methods. Do not store distinctive sentences
+from source articles.
 
 ## Expression Bank
 

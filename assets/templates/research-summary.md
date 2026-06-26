@@ -1,6 +1,7 @@
 # Research Summary
 
-Use this template after reading external sources. Replace bracketed placeholders before delivery.
+Use this template after reading external sources. Replace bracketed placeholders
+ before delivery.
 
 ## Search Scope
 

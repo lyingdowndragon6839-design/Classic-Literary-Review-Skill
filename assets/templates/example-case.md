@@ -1,6 +1,7 @@
 # 《作品名》Example
 
-Use this template for one book only. Replace every bracketed placeholder before committing.
+Use this template for one book only. Replace every bracketed placeholder before
+committing.
 
 ## 作品简介
 

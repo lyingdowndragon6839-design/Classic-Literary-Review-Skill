@@ -1,6 +1,7 @@
 # Reviewer Report
 
-Use this template after reading a draft as an editor. Choose one verdict and make the comments actionable.
+Use this template after reading a draft as an editor. Choose one verdict and mak
+e the comments actionable.
 
 ## Verdict
 

@@ -4,8 +4,9 @@
 
 Run at least eight passes before final delivery.
 
-Humanization does not mean adding random colloquial words. It means simulating how a serious
-human writer would reread, doubt, cut, rearrange, and sharpen a piece.
+Humanization does not mean adding random colloquial words. It means simulating h
+ow a serious human writer would reread, doubt, cut, rearrange, and sharpen a pie
+ce.
 
 ## Eight Required Passes
 

@@ -1,7 +1,8 @@
 # AI Check
 
-AI trace is not only a word problem. A paragraph can avoid every forbidden phrase and still feel
-generated if the logic is too smooth, the rhythm too even, or the ending too obedient.
+AI trace is not only a word problem. A paragraph can avoid every forbidden phras
+e and still feel generated if the logic is too smooth, the rhythm too even, or t
+he ending too obedient.
 
 ## Reading Response Cliche Table
 

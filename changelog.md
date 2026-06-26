@@ -10,7 +10,7 @@ All notable changes to this project are documented here.
 - Renamed project files to lowercase kebab-case where appropriate.
 - Moved internal writing system files into `modules/`.
 - Rebuilt README with quick start, table of contents, examples, roadmap, contributing, license, and contact sections.
-- Added GitHub standard files: `LICENSE`, `CONTRIBUTING.md`, `.gitignore`.
+- Added GitHub standard files: `LICENSE`, `contributing.md`, `.gitignore`.
 - Added module and example indexes.
 
 ### Fixed

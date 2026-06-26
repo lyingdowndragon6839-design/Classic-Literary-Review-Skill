@@ -32,5 +32,5 @@ Forbidden:
 
 ## Quotation Rule
 
-Avoid direct quotation unless the user explicitly asks for citation-heavy output. For normal
-writing, use paraphrased research summary and original analysis.
+Avoid direct quotation unless the user explicitly asks for citation-heavy output
+. For normal writing, use paraphrased research summary and original analysis.
