@@ -3,23 +3,23 @@
 ## Full Writing Run
 
 ```markdown
-# Research Summary
+## Research Summary
 
-# Prompt Design Summary
+## Prompt Design Summary
 
-# Style Learning Summary
+## Style Learning Summary
 
-# Main Thesis
+## Main Thesis
 
-# Draft
+## Draft
 
-# Revision Log
+## Revision Log
 
-# AI Check Report
+## AI Check Report
 
-# Reviewer Report
+## Reviewer Report
 
-# Final Essay
+## Final Essay
 ```
 
 ## Research Summary Rules
@@ -55,4 +55,3 @@ If the user asks for a brief answer, compress process artifacts:
 
 ## 最终稿
 ```
-

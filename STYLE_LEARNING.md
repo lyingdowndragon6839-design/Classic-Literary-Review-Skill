@@ -1,110 +1,87 @@
-# Style Learning Module
+# 风格学习模块
 
-## Goal
+风格学习不是模仿某个作者。它更像做读书笔记：记录好文章怎样开头、怎样转弯、怎样把一个细节写成判断，最后把这些方法变成自己的工具。
 
-Turn searched articles into reusable craft banks for the current writing run.
+## 要提取什么
 
-The Agent does not imitate one author. It extracts patterns across many sources and rebuilds them into a neutral, original style system.
-
-## Analysis Targets
-
-| Target | Extraction Question |
-|---|---|
-| Openings | How do strong pieces enter the work without summary? |
-| Endings | How do they close without moral slogan? |
-| Transitions | How do they move between evidence and judgment? |
-| Metaphors | What kinds of comparisons clarify rather than decorate? |
-| Argument progression | How does the thesis deepen? |
-| Sentence patterns | How do sentence lengths vary? |
-| Narrative rhythm | Where does the article pause, accelerate, or return to detail? |
-
-## Required Banks
-
-Use [assets/templates/style_banks.md](assets/templates/style_banks.md).
-
-### Expression Bank
-
-Collect reusable expression functions, not copied phrases.
-
-Example:
-
-| Function | Source Pattern | Original Rebuild |
+| Bank | 看什么 | 保存成什么 |
 |---|---|---|
-| Turn praise into doubt | Many essays begin by questioning a common admiration | “这本书最不该被匆忙赞美的地方，恰好是……” |
+| Opening Bank | 好文章怎样避开作者生平和剧情概括 | 开头策略 |
+| Transition Bank | 怎样从情节转到判断 | 转场功能 |
+| Ending Bank | 怎样不靠口号收尾 | 结尾策略 |
+| Question Bank | 哪些问题能继续生出分析 | 思考问题 |
+| Rhythm Bank | 段落长短、停顿、短句位置 | 节奏备注 |
+| Image Bank | 哪些物件或场景承载意义 | 证据线索 |
 
-### Sentence Bank
+## Style Bank 模板
 
-Store sentence skeletons.
-
-```text
-如果只把它读成 A，反而会错过 B。
-真正刺人的不是 A，而是 B。
-到这里，问题已经从 A 变成了 B。
-```
+```markdown
+## Style Bank
 
 ### Opening Bank
 
-Opening types:
-
-- Misreading correction.
-- Detail-first opening.
-- Rereading moment.
-- Contradiction opening.
-- Reader discomfort opening.
-- Question opening.
-
-### Ending Bank
-
-Ending types:
-
-- Return to one image.
-- Return to reader's changed judgment.
-- Refuse easy conclusion.
-- Leave a specific wound open.
-- Narrow from history back to one person.
+| 类型 | 适合什么时候用 | 句式骨架 |
+|---|---|---|
 
 ### Transition Bank
 
-Transition functions:
+| 功能 | 句式骨架 |
+|---|---|
 
-- Shift from plot to judgment.
-- Shift from person to structure.
-- Shift from praise to doubt.
-- Shift from detail to today's reader.
-- Shift from first reading to rereading.
+### Ending Bank
+
+| 类型 | 句式骨架 |
+|---|---|
 
 ### Question Bank
 
-Questions must generate analysis:
+-
 
-- What does this character think they want?
-- What do they actually want?
-- What detail would damage the novel if removed?
-- Which tragedy is personal, and which part is structural?
-- What does the narrator refuse to explain?
+### Rhythm Bank
 
-### Metaphor Bank
+- 长段用于：
+- 短句用于：
+- 需要停顿的位置：
+- 可以回到的场景：
 
-Only keep metaphors that clarify a relationship. Reject decorative metaphors.
+### Avoid
 
-### Narrative Rhythm Bank
+-
+```
 
-Record:
+## 填写示例
 
-- average paragraph shape;
-- where short paragraphs appear;
-- where questions appear;
-- where the writer returns to the original scene;
-- how the ending slows down.
+### Opening Bank
 
-## Style Learning Summary
+| 类型 | 适合什么时候用 | 句式骨架 |
+|---|---|---|
+| 纠正常见误读 | 名著已经有固定印象 | “很多人把这本书读成 A，但真正难受的地方是 B。” |
+| 细节进入 | 用户记住了一个具体场景 | “我一直忘不掉的不是结局，而是那个小动作。” |
+| 重读发现 | 文章需要个人阅读痕迹 | “第一次读时我以为 A，后来重读才发现 B。” |
 
-The final summary must include:
+### Transition Bank
 
-1. `Most useful opening patterns`
-2. `Most useful transitions`
-3. `Best thesis-deepening moves`
-4. `Reusable sentence skeletons`
-5. `Risks learned from weak sources`
-6. `Banks selected for this article`
+| 功能 | 句式骨架 |
+|---|---|
+| 情节到判断 | “这段情节重要，不是因为它推动了故事，而是因为它暴露了……” |
+| 人物到结构 | “如果只怪这个人物软弱，作品里更冷的一层就会被放过。” |
+| 赞美到怀疑 | “这个说法当然成立，但它太顺了，顺到遮住了……” |
 
+### Ending Bank
+
+| 类型 | 句式骨架 |
+|---|---|
+| 回到场景 | “所以最后留在脑子里的，仍然是……” |
+| 拒绝口号 | “这本书没有告诉我们该怎样生活，它只是让人不敢再轻易……” |
+| 从宏大回到人 | “宏大的词到这里都退开了，只剩下这个人……” |
+
+### Question Bank
+
+- 这个人物以为自己在追什么，实际上在追什么？
+- 如果删掉这个细节，作品会少掉什么？
+- 这个悲剧中哪一部分来自个人，哪一部分来自结构？
+- 读者为什么明知道他错了，仍然会理解他一瞬间？
+
+## 边界
+
+如果一句话独特到能让人认出原文，就不要用。保留方法，不保留句子。

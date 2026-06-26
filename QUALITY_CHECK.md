@@ -63,6 +63,22 @@
 - [ ] No large uninterrupted wall of text dominates a file.
 - [ ] Checklists use consistent Markdown.
 
+## Repository Review
+
+- [ ] 所有 Markdown 都不是单行压缩内容。
+- [ ] 标题层级清楚，根标题只有一个。
+- [ ] 没有空章节。
+- [ ] README 中引用的文件与仓库实际文件名一致。
+- [ ] 相对路径在 GitHub 中可以打开。
+- [ ] Mermaid 代码块使用 `mermaid` 标记。
+- [ ] 核心文档之间没有明显内容冲突。
+- [ ] 重复内容只保留在必要模板里。
+- [ ] Examples 不只是最终文章，至少 5 个案例展示完整流程。
+- [ ] README 能让第一次访问的人五分钟内知道怎么使用。
+- [ ] PROMPTS.md 能直接复制使用。
+- [ ] DECISION_TREE.md 能处理常见用户场景。
+- [ ] ROADMAP.md 体现长期维护方向。
+
 ## Final Self-Check Command Ideas
 
 ```powershell

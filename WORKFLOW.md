@@ -1,166 +1,101 @@
-# Workflow
+# 工作流
 
-## Five-Stage Agent Pipeline
+这个工作流把读后感写作拆成一连串小决定。每一步都有输入和输出，避免 Agent 直接跳到成稿。
+
+## Agent 协作
+
+```mermaid
+flowchart TD
+    U["User"] --> R["Research Agent"]
+    R --> S["Style Learning Agent"]
+    S --> I["Idea Agent"]
+    I --> O["Outline Agent"]
+    O --> W["Writer Agent"]
+    W --> V["Reviewer Agent"]
+    V --> H["Humanization Agent"]
+    H --> Q["Final QA Agent"]
+    Q --> U
+    V -- "主判断不稳" --> I
+    Q -- "仍有 AI 痕迹或逻辑问题" --> H
+```
+
+| Agent | 职责 | 输入 | 输出 | 什么时候重跑 |
+|---|---|---|---|---|
+| Research Agent | 搜索并筛选外部资料 | 作品、目标、是否联网 | Research Summary | 来源太少、重复、打不开 |
+| Style Learning Agent | 学写法，不学句子 | Research Summary | Style Bank | 初稿像模板文 |
+| Idea Agent | 选一个主判断 | 用户感受、资料摘要 | Main Judgment | 判断太大、太常见 |
+| Outline Agent | 把判断拆成结构 | 主判断、证据 | Outline | 剧情复述过多 |
+| Writer Agent | 写初稿 | Outline、Style Bank | Draft | 初稿没有用户声音 |
+| Reviewer Agent | 挑结构和文学问题 | Draft | Reviewer Notes | 问题属于主判断层面 |
+| Humanization Agent | 改节奏、细节和 AI 味 | Draft、Reviewer Notes | Revised Draft | 文字仍像生成 |
+| Final QA Agent | 做提交前检查 | Revised Draft | Final Essay | 逻辑断裂或场景不匹配 |
+
+## 分步契约
+
+| 步骤 | 输入 | 处理 | 输出 |
+|---:|---|---|---|
+| 1 | 作品、字数、场景 | 确认任务和缺失信息 | Task Brief |
+| 2 | 用户笔记或感受 | 判断是否有真实阅读体验 | Reading Clues |
+| 3 | 联网许可 | 搜索高质量读后感和评论 | Source List |
+| 4 | Source List | 提取常见观点和少见角度 | Research Summary |
+| 5 | Research Summary | 学开头、转场、结尾和节奏 | Style Bank |
+| 6 | Reading Clues + Research Summary | 生成候选主判断 | Judgment List |
+| 7 | Judgment List | 选择一个有证据的主判断 | Main Judgment |
+| 8 | Main Judgment | 搭文章结构 | Outline |
+| 9 | Outline | 写初稿，剧情不超过 20% | Draft |
+| 10 | Draft | 检查逻辑、空话和节奏 | Reviewer Notes |
+| 11 | Reviewer Notes | 改声音、细节和结构 | Revised Draft |
+| 12 | Revised Draft | 检查 AI 痕迹和逻辑跳跃 | Revision Report |
+| 13 | Revision Report | 按提交场景润色 | Final Essay |
+
+## 读后感专用流程
 
 ```mermaid
 sequenceDiagram
     participant U as User
-    participant R as Research Agent
-    participant L as Learning Agent
-    participant W as Writing Agent
-    participant V as Revision Agent
-    participant E as Reviewer Agent
-    U->>R: Provide work and writing goal
-    R->>R: Search 20+ sources
-    R->>L: Research Summary
-    L->>L: Build Style Banks and Prompt Design Summary
-    L->>W: Thesis inputs and craft banks
-    W->>W: Draft with one central judgment
-    W->>V: Draft
-    V->>V: 8 humanization passes and AI trace repair
-    V->>E: Revised draft
-    E->>E: 20+ critical comments
-    E-->>V: Problems found
-    V-->>E: Revised again
-    E->>U: Final Essay and process artifacts
+    participant A as Agent
+    U->>A: 作品、字数、读后感场景、已有感受
+    A->>A: 判断用户是否真的有阅读体验
+    A->>A: 保留用户原始感受或建立理解框架
+    A->>A: 联网搜索外部评论
+    A->>A: 总结常见观点和俗套风险
+    A->>A: 提炼一个主判断
+    A->>A: 搭结构并控制剧情比例
+    A->>A: 写初稿
+    A->>A: 审稿、改稿、降 AI 味
+    A->>U: 最终稿 + 简短过程说明
 ```
 
-## Stage Gates
+### 用户有真实阅读体验
 
-| Stage | Must Produce | Cannot Proceed Until |
-|---|---|---|
-| Research | Research Summary with source map | 20+ pieces reviewed or online limitation stated |
-| Learning | Style Banks and Prompt Design Summary | Craft patterns separated from source content |
-| Writing | Main Thesis and Draft | One thesis chosen, plot budget set |
-| Revision | Revision Log and AI Check Report | Eight passes completed |
-| Review | Reviewer Report and Final Essay | 20+ issues addressed or explicitly rejected |
+优先保留。比如“我读到老牛那里很难受”，比“生命意义”这种大词更有价值。搜索资料可以帮助深化这句话，但不能把它替换掉。
 
-## Run Modes
+### 用户没有读完书
 
-### Full Mode
+不要伪装完整读后感。先做理解框架：人物关系、主要冲突、后续阅读要注意的问题、读完后可能写的角度。
 
-Use when the user asks for a finished article. Execute every stage.
+### 用户已有草稿
 
-### Research-Only Mode
+先做编辑，不要重写。保留原意和语气，标出问题，再修逻辑、证据、节奏和 AI 痕迹。
 
-Use when the user asks for sources, angles, or preparation. Stop after Research Summary and Style Learning Summary.
+## 输出模板
 
-### Revision-Only Mode
+```markdown
+## Task Brief
 
-Use when the user provides a draft. Still research if online, then run Revision, AI Check, and Reviewer.
+## Research Summary
 
-### Offline Mode
+## Style Bank
 
-Use only with user permission. See [docs/offline_mode.md](docs/offline_mode.md).
+## Main Judgment
 
-## Default Timing
+## Outline
 
-1. Clarify only missing essentials: work title, target length, audience, special angle.
-2. Start research immediately if the title is clear.
-3. Keep notes in structured sections, not hidden memory.
-4. Write the first draft only after the thesis is selected.
-5. Never treat the first draft as final.
+## Draft
 
-## Final Deliverable Format
+## Reviewer Notes
 
-```text
-Research Summary
-Prompt Design Summary
-Style Learning Summary
-Main Thesis
-Draft
-Revision Log
-AI Check Report
-Reviewer Report
-Final Essay
+## Revision Report
+
+## Final Essay
 ```
-
-If the user asks for “只要最终稿”, still perform the internal stages and provide a short process note.
-
-## 读后感专用工作流
-
-这个流程用于最常见的真实场景：用户读完一本名著，想写一篇不空、不俗、不像 AI 的读后感。
-
-```mermaid
-flowchart TD
-    A["1. 确认任务"] --> B["2. 判断是否有阅读体验"]
-    B --> C{"用户有真实感受吗"}
-    C -- "有" --> D["3. 优先保留用户自己的感受"]
-    C -- "没有或很少" --> E["4. 先建立理解框架"]
-    D --> F["5. 联网搜索外部评论"]
-    E --> F
-    F --> G["6. 总结常见观点"]
-    G --> H["7. 避开俗套观点"]
-    H --> I["8. 提炼主判断"]
-    I --> J["9. 组织结构"]
-    J --> K["10. 写初稿"]
-    K --> L["11. 人类化修改"]
-    L --> M["12. AI 痕迹检测"]
-    M --> N["13. 最终交付"]
-```
-
-### 1. 确认任务
-
-确认作品、字数、提交场景、目标读者、是否允许联网、是否已有草稿。缺少信息时只问必要问题，不要把用户拦在流程外。
-
-### 2. 判断用户是否真的有阅读体验
-
-看用户是否提供了：
-
-- 某个人物让他不舒服或感动；
-- 某个情节记得很清楚；
-- 读完后的疑问；
-- 不想写的俗套角度；
-- 自己的初步判断。
-
-### 3. 如果有阅读体验，优先保留用户自己的感受
-
-用户的原始感受比外部评论更重要。不要把用户的声音改没。联网资料用于扩大视野、避开俗套、增强论证，不用于覆盖用户的阅读经验。
-
-### 4. 如果没有阅读体验，先帮助用户建立理解框架
-
-不要伪造“我读到这里时”的个人经历。先给用户建立理解框架：主要人物、核心冲突、可写问题、容易写俗的角度，再让用户选择一个真正能接受的主判断。
-
-### 5. 联网搜索外部评论
-
-按 [SEARCH.md](SEARCH.md) 执行。优先搜索高质量读后感、长评和文学评论，记录常见观点、少见角度、写法特点和风险。
-
-### 6. 总结常见观点
-
-把外部评论中的常见角度列出来，例如“苦难”“善良”“命运”“社会黑暗”。常见不等于不能写，但必须写出新的切口。
-
-### 7. 避开俗套观点
-
-标出最容易写空的表达和角度。比如《活着》不要直接写“苦难使人坚强”，《悲惨世界》不要只写“善良战胜苦难”。
-
-### 8. 提炼主判断
-
-从用户感受和搜索结果中提炼一个主判断。整篇文章只围绕这个判断展开，不罗列多个主题。
-
-### 9. 组织结构
-
-结构应包括：
-
-| 部分 | 作用 |
-|---|---|
-| 开头 | 从一个刺痛点或误读进入 |
-| 中段一 | 用人物或情节支撑主判断 |
-| 中段二 | 推进到更深一层理解 |
-| 中段三 | 加入个人阅读感受或重读发现 |
-| 结尾 | 回到具体场景，不写万能升华 |
-
-### 10. 写初稿
-
-初稿要自然，但必须有判断。剧情概括不得超过全文 20%。
-
-### 11. 人类化修改
-
-按 [HUMANIZATION.md](HUMANIZATION.md) 执行：删套话，打散句式，加入真实犹豫、停顿和重新理解。
-
-### 12. AI 痕迹检测
-
-按 [AI_CHECK.md](AI_CHECK.md) 执行。检测到读后感高频 AI 腔时直接改写。
-
-### 13. 最终交付
-
-最终稿必须适合当前提交场景，并保留用户自己的语气。交付时附一段简短说明：主判断是什么、改掉了哪些 AI 腔、还剩什么风险。

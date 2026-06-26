@@ -1,84 +1,51 @@
-# Writing Module
+# Writing
 
-## Core Thesis Rule
+The draft begins only after the main judgment is chosen.
 
-Do not write by template categories:
+Many weak reading responses start with four safe boxes: theme, character, plot, meaning. That structure feels complete, but it often produces a flat essay. A better draft grows from one pressure point.
+
+## Main Judgment Template
 
 ```text
-主题 -> 人物 -> 情节 -> 意义
+这篇读后感要写的不是【常见主题】，而是【更具体的矛盾/刺痛点】。
+我会用【人物/情节/细节 1】、【人物/情节/细节 2】、【人物/情节/细节 3】来支撑。
+最后回到【读完后改变的理解】。
 ```
 
-Instead, search for:
+Example:
 
-- the most painful point;
-- the most contradictory point;
-- the most overlooked point;
-- the most counterintuitive point.
-
-Then form one main thesis.
-
-## Thesis Builder
-
-```mermaid
-flowchart LR
-    A["刺痛点"] --> E["主判断"]
-    B["矛盾点"] --> E
-    C["忽略点"] --> E
-    D["反直觉点"] --> E
-    E --> F["证据链"]
-    F --> G["文章结构"]
+```text
+这篇读后感要写的不是《活着》中的苦难，而是苦难没有自动把人变伟大，它只是把人一点点磨空。
+我会用福贵的失去、余华平静的叙述、老牛结尾来支撑。
+最后回到：活着有时不是意义，而是还没有停下。
 ```
 
-## Good Thesis Tests
+## Outline Template
 
-| Test | Pass Condition |
-|---|---|
-| Specificity | It cannot be moved unchanged to another book |
-| Tension | It contains a conflict, reversal, or discomfort |
-| Evidence | At least three textual details can support it |
-| Scope | It can sustain the target length |
-| Originality | It is not merely the most common search result |
+| Paragraph | Job | Evidence | Reader Feeling |
+|---:|---|---|---|
+| 1 | Enter from a discomfort, not a biography |  |  |
+| 2 | State the main judgment |  |  |
+| 3 | First evidence node |  |  |
+| 4 | Deepen the judgment |  |  |
+| 5 | Add personal reading turn |  |  |
+| 6 | Close on a scene, not a slogan |  |  |
 
 ## Plot Budget
 
-Plot summary must stay under 20 percent of the final essay.
+Plot is evidence, not the body of the essay. If more than one fifth of the article is explaining what happened, the article has probably lost its judgment.
 
-Use plot only to:
+Use plot only when it answers:
 
-- introduce evidence;
-- clarify a contradiction;
-- explain why a detail matters;
-- return the reader to a scene.
+- Why does this scene matter?
+- What does this action reveal?
+- How does this detail change the reader's view?
 
-Do not narrate the book in order.
+## Drafting Checklist
 
-## Article Architecture
-
-| Section | Function | Forbidden |
-|---|---|---|
-| Opening | Establish a new angle | Biography, fame, summary |
-| First turn | Correct a common misreading | “大家都知道” |
-| Evidence body | Build the thesis through details | Example stacking |
-| Deepening | Move from person to structure or rereading | Abstract slogan |
-| Ending | Return to human recognition | Generic inspiration |
-
-## Drafting Instructions
-
-1. State the main thesis before drafting.
-2. Choose three to five evidence nodes.
-3. Assign one function to each paragraph.
-4. Vary paragraph length.
-5. Keep one or two moments of reader psychology:
-   - “我第一次读到这里时……”
-   - “后来重读，我才意识到……”
-   - “直到结尾，我才明白……”
-6. Avoid namedropping unless it changes the reading.
-
-## Originality Guard
-
-Before finalizing the thesis, compare it with the Research Summary:
-
-- If it repeats the dominant online angle, add a sharper distinction.
-- If it depends on a single source, rebuild it from textual details.
-- If it sounds impressive but cannot be evidenced, discard it.
+- The first paragraph creates a reason to keep reading.
+- The thesis can be argued, not merely admired.
+- Every long paragraph contains a concrete scene, action, or object.
+- At least one sentence sounds like it came from the user's own reading experience.
+- The ending returns to a person, scene, or unresolved question.
 

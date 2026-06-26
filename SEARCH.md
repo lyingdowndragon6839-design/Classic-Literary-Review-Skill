@@ -1,85 +1,108 @@
-# Search Module
+# 搜索模块
 
-## Rule
+搜索不是为了堆参考资料，而是为了让文章少一点自说自话。先看别人怎么写，才知道哪些角度已经太熟，哪些细节还值得重新进入。
 
-Every online writing run begins with search. The Agent must not draft before completing a source pass.
+## 来源顺序
 
-## Source Priority
-
-| Priority | Source Type | Search Intent |
+| 优先级 | 来源 | 为什么看 |
 |---:|---|---|
-| 1 | 知乎高赞回答 | Find sharp public arguments and reader pain points |
-| 2 | 豆瓣长评 | Find long-form reader essays and structural moves |
-| 3 | 微信公众号文学评论 | Find polished Chinese essay pacing |
-| 4 | B站读书 UP 主文字稿 | Find oral explanation rhythm and audience hooks |
-| 5 | 中国知网公开摘要 | Find academic angles without importing jargon |
-| 6 | 文学网站评论 | Find specialized criticism |
-| 7 | Foreign Literary Review | Find international critical frames |
-| 8 | Medium | Find contemporary essay structures |
-| 9 | Reddit Books | Find raw reader reactions and debate points |
-| 10 | GitHub Prompt Repository | Find agent workflow and prompt design patterns |
+| 1 | 知乎高赞回答 | 看公共讨论里最锋利、最常见的判断 |
+| 2 | 豆瓣长评 | 看真实读者怎样写阅读过程 |
+| 3 | 微信公众号文学评论 | 学中文长文的节奏和转场 |
+| 4 | B 站读书 UP 主文字稿 | 学口语化解释和听众入口 |
+| 5 | 中国知网公开摘要 | 找学术角度，但不搬学术腔 |
+| 6 | 文学网站评论 | 找更集中的作品分析 |
+| 7 | 国外 Literary Review | 看国际评论里的问题意识 |
+| 8 | Medium | 看当代散文结构 |
+| 9 | Reddit Books | 看普通读者争论点 |
+| 10 | GitHub Prompt Repository | 学流程设计，不学句子 |
 
-## Query Plan
-
-Use Chinese and English queries.
+## 查询词
 
 ```text
 <作品名> 读后感 长评
 <作品名> 豆瓣 长评
 <作品名> 知乎 高赞 解读
 <作品名> 微信公众号 文学评论
-<作品名> B站 读书 文稿
+<作品名> 课堂 读后感
 <作品名> CNKI 摘要
 <English title> literary review
 <English title> criticism
 <English title> reddit books
 ```
 
-## Minimum Reading Standard
+## Research Summary 模板
 
-- Read at least 20 relevant pieces.
-- Record title, platform, URL, author if visible, date if visible.
-- Separate “what the article argues” from “how the article writes”.
-- Do not copy sentences.
-- Do not paraphrase distinctive metaphors.
-- Do not build the final essay by stitching source viewpoints.
+```markdown
+## Research Summary
 
-## What To Learn
+### 作品与任务
 
-| Learn | Questions |
-|---|---|
-| 行文节奏 | Where does the article slow down or accelerate? |
-| 思考方式 | What problem does it choose instead of summarizing plot? |
-| 段落组织 | How does each paragraph move the argument forward? |
-| 观点推进 | What changes between opening, middle, and ending? |
-| 修辞方式 | Does it use questions, contrast, repetition, scene return? |
-| 结构设计 | Does it begin with detail, conflict, quote, or rereading moment? |
-| 转场技巧 | How does it avoid “first, second, third”? |
+作品：
+目标字数：
+提交场景：
+用户已有感受：
 
-## Research Summary Template
+### 搜索范围
 
-Use [assets/templates/research_summary.md](assets/templates/research_summary.md).
+搜索日期：
+搜索平台：
+已阅读数量：
+无法访问来源：
 
-Required sections:
+### 来源表
 
-1. `Search Scope`
-2. `Source Table`
-3. `Common Angles`
-4. `Underused Angles`
-5. `Disagreements`
-6. `Writing Moves Learned`
-7. `Risks To Avoid`
-8. `Possible Main Thesis`
+| id | 来源 | 标题 | 链接 | 主要观点 | 写法可借鉴处 | 避免使用 |
+|---:|---|---|---|---|---|---|
 
-## Search Integrity
+### 高频观点
 
-> [!CAUTION]
-> Research is not decoration. If a source was not opened or read, do not count it.
+1.
+2.
+3.
 
-When access is blocked:
+### 少见观点
 
-- mark `blocked`;
-- keep the attempted URL or query;
-- replace with another accessible source;
-- do not invent the source content.
+1.
+2.
+3.
 
+### 优秀表达方式
+
+- 开头：
+- 转场：
+- 结尾：
+- 论证推进：
+
+### 值得借鉴
+
+-
+
+### 避免使用
+
+-
+
+### 最终判断候选
+
+1.
+2.
+3.
+```
+
+## 什么算“读过一个来源”
+
+至少能回答三个问题：
+
+1. 它主要写了什么观点？
+2. 它有什么写法值得学？
+3. 它有什么表达或角度不能照搬？
+
+打不开的页面不要计入已读。标记 blocked，再换一个来源。
+
+## 示例
+
+| 高频观点 | 为什么容易写俗 | 更好的处理 |
+|---|---|---|
+| 《活着》写苦难中的坚强 | 容易变成励志文 | 改成“苦难没有自动生成意义” |
+| 《悲惨世界》歌颂善良 | 容易变成道德赞美 | 改成“慈悲如何改写人的身份” |
+| 《百年孤独》写孤独 | 容易浪漫化 | 改成“孤独是一种历史循环” |

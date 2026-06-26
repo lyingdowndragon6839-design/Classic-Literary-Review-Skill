@@ -25,6 +25,8 @@ Update these files together:
 2. [SKILL.md](../SKILL.md)
 3. [QUALITY_CHECK.md](../QUALITY_CHECK.md)
 4. [README.md](../README.md)
+5. [DECISION_TREE.md](../DECISION_TREE.md)
+6. [PROMPTS.md](../PROMPTS.md)
 
 ## Style Consistency
 
@@ -33,4 +35,4 @@ Update these files together:
 - Use callouts for hard rules.
 - Keep modules actionable.
 - Avoid long motivational prose.
-
+- Keep filenames exactly as linked in README. Case matters on GitHub.

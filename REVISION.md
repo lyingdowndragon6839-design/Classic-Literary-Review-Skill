@@ -1,53 +1,56 @@
-# Revision Module
+# Revision
 
-## Revision Philosophy
+Revision is where a generated-looking draft becomes a piece of writing.
 
-Revision is not polish. Revision is where the article becomes written by a person rather than assembled by a model.
+The first draft usually explains too much, summarizes too often, and ends too neatly. Revision creates pressure: what can be cut, what needs a scene, where the user's own voice should return.
 
-## Version Flow
+## Revision Passes
 
-```mermaid
-flowchart TD
-    A["Draft v0"] --> B["Humanization v1-v8"]
-    B --> C["AI Trace Repair"]
-    C --> D["Literary Editor Review"]
-    D --> E{"Major problems remain?"}
-    E -- "yes" --> B
-    E -- "no" --> F["Final Essay"]
+| Pass | Question | Action |
+|---:|---|---|
+| 1 | Where is the draft only retelling plot? | Cut or turn into evidence |
+| 2 | Where does the draft use large words without detail? | Replace with scene, gesture, object |
+| 3 | Where does every paragraph sound the same? | Vary length and rhythm |
+| 4 | Where is the user's reading feeling missing? | Add a real reading turn |
+| 5 | Where does the logic jump? | Add the missing bridge |
+| 6 | Where is the ending too neat? | Return to a concrete unresolved image |
+
+## Revision Report Template
+
+```markdown
+## Revision Report
+
+### Main Fix
+
+### Cuts
+
+| Removed | Why |
+|---|---|
+
+### Added Detail
+
+| Detail | Purpose |
+|---|---|
+
+### Logic Repairs
+
+| Problem | Repair |
+|---|---|
+
+### Voice Repairs
+
+| Problem | Repair |
+|---|---|
+
+### Remaining Risk
 ```
-
-## Revision Log
-
-Every full run must produce:
-
-| Version | Main Operation | What Changed | Remaining Risk |
-|---|---|---|---|
-| v0 | Draft |  |  |
-| v1 | Delete templates |  |  |
-| v2 | Sentence variation |  |  |
-| v3 | Paragraph rhythm |  |  |
-| v4 | Detail reinforcement |  |  |
-| v5 | Reader psychology |  |  |
-| v6 | Observation over explanation |  |  |
-| v7 | Rhythm and silence |  |  |
-| v8 | Editor-level rewrite |  |  |
-
-## Structural Revision Questions
-
-- Does the opening create a problem?
-- Does every paragraph move the thesis?
-- Is any paragraph merely admiring the book?
-- Does the article return to the same detail with deeper meaning?
-- Is plot summary below 20 percent?
-- Are the best sentences serving the thesis, or showing off?
 
 ## When To Restart
 
-Restart from thesis if:
+Restart from the main judgment if:
 
-- the article has more than one center;
-- the best evidence does not support the thesis;
-- the piece reads like a list of insights;
-- the ending depends on generic life advice;
-- Reviewer finds the same problem twice.
+- the draft has two or more centers;
+- the best paragraph does not support the thesis;
+- the article could be reused for another book with only the title changed;
+- the ending depends on “启示、意义、光辉” rather than a concrete recognition.
 
