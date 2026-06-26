@@ -39,7 +39,7 @@ description: >-
 - 先搜索再写
 - 不凭记忆草稿
 - 产出 Research Summary、Style Learning Summary、Main Judgment、Outline、
-  Draft、Reviewer Notes、Revision Report、AI Check Report、Final Essay
+Draft、Reviewer Notes、Revision Report、AI Check Report、Final Essay
 
 如果不能联网：
 
