@@ -1,7 +1,7 @@
 # Maintenance Guide
 
 仓库维护者参考。新增内容时先判断它是否真的改进写作流程，
- 而不是让仓库显得更庞大。
+  而不是让仓库显得更庞大。
 
 ## Adding A New Example
 

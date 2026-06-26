@@ -1,7 +1,7 @@
 # Prompt Learning
 
 动笔之前，从公开 GitHub prompt 仓库学习工作流设计。目标是改进 Agent 流程，
- 不是复制 prompt 文本。
+  不是复制 prompt 文本。
 
 ## 搜索关键词
 
@@ -76,4 +76,4 @@ ai writing
 ## 整合规则
 
 Prompt 学习可以改进 Agent 的流程，但不能覆盖文学研究。
- 最终文章必须扎根于目标作品和 Research Summary，不是通用的 prompt 技巧。
+  最终文章必须扎根于目标作品和 Research Summary，不是通用的 prompt 技巧。
