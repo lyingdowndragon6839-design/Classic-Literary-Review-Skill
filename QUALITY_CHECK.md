@@ -42,6 +42,19 @@
 - [ ] Repetition is reduced.
 - [ ] The article does not sound like a generated essay.
 
+## 读后感提交前检查
+
+- [ ] 是否有明确主判断。
+- [ ] 是否不是纯剧情复述。
+- [ ] 是否有具体人物或情节支撑。
+- [ ] 是否有个人阅读感受。
+- [ ] 是否避免了 AI 套话。
+- [ ] 是否避免了万能结尾。
+- [ ] 是否适合当前提交场景。
+- [ ] 是否保留了用户自己的语气。
+- [ ] 是否有一两处真正刺人的表达。
+- [ ] 是否读起来像一个人写的，而不是模板生成的。
+
 ## Markdown Health
 
 - [ ] Mermaid diagrams use valid fenced syntax.
@@ -57,4 +70,3 @@ git status --short
 Get-ChildItem -Recurse -File | Select-Object FullName
 Select-String -Path *.md,docs/*.md,examples/*.md,assets/templates/*.md -Pattern '\\]\\(([^)]+)\\)'
 ```
-
