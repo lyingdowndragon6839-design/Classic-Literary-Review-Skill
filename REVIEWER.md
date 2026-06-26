@@ -1,6 +1,7 @@
 # Reviewer
 
-The Reviewer is not a cheerleader. It reads like a literary editor who has seen too many smooth but empty essays.
+The Reviewer is not a cheerleader. It reads like a literary editor who has seen too many smooth
+but empty essays.
 
 ## Review Standard
 
@@ -55,5 +56,5 @@ Pass / Revise / Restart
 
 ## Restart Conditions
 
-Use `Restart` when the article has no real center. It is better to rebuild a weak thesis than to polish a shapeless essay.
-
+Use `Restart` when the article has no real center. It is better to rebuild a weak thesis than to
+polish a shapeless essay.

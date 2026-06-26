@@ -18,4 +18,3 @@ Use this schema inside Research Summary.
 | id | title | platform | access | main_angle | writing_move | risk |
 |---:|---|---|---|---|---|---|
 | 1 | Example review | Douban | read | Reads the protagonist through shame | Opens with rereading surprise | Too much plot |
-

@@ -2,7 +2,9 @@
 
 The draft begins only after the main judgment is chosen.
 
-Many weak reading responses start with four safe boxes: theme, character, plot, meaning. That structure feels complete, but it often produces a flat essay. A better draft grows from one pressure point.
+Many weak reading responses start with four safe boxes: theme, character, plot, meaning. That
+structure feels complete, but it often produces a flat essay. A better draft grows from one
+pressure point.
 
 ## Main Judgment Template
 
@@ -33,7 +35,8 @@ Example:
 
 ## Plot Budget
 
-Plot is evidence, not the body of the essay. If more than one fifth of the article is explaining what happened, the article has probably lost its judgment.
+Plot is evidence, not the body of the essay. If more than one fifth of the article is explaining
+what happened, the article has probably lost its judgment.
 
 Use plot only when it answers:
 
@@ -48,4 +51,3 @@ Use plot only when it answers:
 - Every long paragraph contains a concrete scene, action, or object.
 - At least one sentence sounds like it came from the user's own reading experience.
 - The ending returns to a person, scene, or unresolved question.
-

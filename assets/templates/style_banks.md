@@ -7,7 +7,7 @@
 
 ## Sentence Bank
 
-- 
+-
 
 ## Opening Bank
 
@@ -26,7 +26,7 @@
 
 ## Question Bank
 
-- 
+-
 
 ## Metaphor Bank
 
@@ -39,4 +39,3 @@
 - Short sentence placement:
 - Return detail:
 - Ending pace:
-

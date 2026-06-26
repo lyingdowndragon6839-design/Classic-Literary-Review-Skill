@@ -2,7 +2,8 @@
 
 ## Purpose
 
-Before writing, learn from public GitHub prompt repositories as workflow references. The goal is to improve agent design, not to copy prompt text.
+Before writing, learn from public GitHub prompt repositories as workflow references. The goal is
+to improve agent design, not to copy prompt text.
 
 ## Required Search Keywords
 
@@ -76,5 +77,6 @@ This run will use:
 
 ## Integration Rule
 
-Prompt learning can improve the Agent's process, but it must not override literary research. The final article must be grounded in the target work and research summary, not in generic prompt tricks.
-
+Prompt learning can improve the Agent's process, but it must not override literary research. The
+final article must be grounded in the target work and research summary, not in generic prompt
+tricks.

@@ -143,6 +143,7 @@ flowchart TD
 
 ## Project Status
 
-这个项目目前是 Markdown-first 的 Agent Workflow Repository。它已经包含研究流程、风格学习、读后感写作、审稿和 AI 痕迹检查。未来会继续向可执行脚本、MCP 支持和多 Agent 自动化推进。
+这个项目目前是 Markdown-first 的 Agent Workflow Repository。它已经包含研究流程、风格学习、读后感写作、审稿和 AI
+痕迹检查。未来会继续向可执行脚本、MCP 支持和多 Agent 自动化推进。
 
 详见 [ROADMAP.md](ROADMAP.md)。

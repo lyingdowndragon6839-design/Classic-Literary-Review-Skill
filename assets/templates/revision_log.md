@@ -11,4 +11,3 @@
 | v6 | Reduce explanation, add observation |  |  |
 | v7 | Add rhythm variation |  |  |
 | v8 | Literary editor rewrite |  |  |
-

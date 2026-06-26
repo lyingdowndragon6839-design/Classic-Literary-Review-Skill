@@ -4,7 +4,8 @@
 
 Run at least eight passes before final delivery.
 
-Humanization does not mean adding random colloquial words. It means simulating how a serious human writer would reread, doubt, cut, rearrange, and sharpen a piece.
+Humanization does not mean adding random colloquial words. It means simulating how a serious
+human writer would reread, doubt, cut, rearrange, and sharpen a piece.
 
 ## Eight Required Passes
 
@@ -47,4 +48,3 @@ Do not apologize. Rewrite again:
 3. Cut one abstract conclusion.
 4. Add one difficult, specific judgment.
 5. Rerun [AI_CHECK.md](AI_CHECK.md).
-

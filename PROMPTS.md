@@ -1,6 +1,7 @@
 # Prompt Library
 
-These prompts are meant to be copied and adapted. They work because they ask for process before prose.
+These prompts are meant to be copied and adapted. They work because they ask for process before
+prose.
 
 ## 读后感
 
@@ -64,4 +65,3 @@ Why it works: spoken writing needs rhythm, not dense analysis.
 ```
 
 Why it works: it tells the Agent to edit, not replace.
-

@@ -2,7 +2,8 @@
 
 Revision is where a generated-looking draft becomes a piece of writing.
 
-The first draft usually explains too much, summarizes too often, and ends too neatly. Revision creates pressure: what can be cut, what needs a scene, where the user's own voice should return.
+The first draft usually explains too much, summarizes too often, and ends too neatly. Revision
+creates pressure: what can be cut, what needs a scene, where the user's own voice should return.
 
 ## Revision Passes
 
@@ -53,4 +54,3 @@ Restart from the main judgment if:
 - the best paragraph does not support the thesis;
 - the article could be reused for another book with only the title changed;
 - the ending depends on “启示、意义、光辉” rather than a concrete recognition.
-

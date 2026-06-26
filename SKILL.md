@@ -18,7 +18,8 @@ When this skill triggers, read these files before writing:
 2. [WORKFLOW.md](WORKFLOW.md)
 3. [USAGE.md](USAGE.md) when the user asks how to use the skill,
    provides a reading-response scenario, or needs prompt guidance.
-4. [DECISION_TREE.md](DECISION_TREE.md) when the user request is incomplete or scenario-specific.
+4. [DECISION_TREE.md](DECISION_TREE.md) when the user request is incomplete or
+   scenario-specific.
 5. [PROMPTS.md](PROMPTS.md) when the user needs prompt examples.
 6. [SEARCH.md](SEARCH.md)
 7. [GITHUB_PROMPT_LEARNING.md](GITHUB_PROMPT_LEARNING.md)
@@ -30,7 +31,8 @@ When this skill triggers, read these files before writing:
 13. [REVIEWER.md](REVIEWER.md)
 14. [QUALITY_CHECK.md](QUALITY_CHECK.md)
 
-Read only the relevant example file from [examples/](examples/) when the target work matches or resembles that example.
+Read only the relevant example file from [examples/](examples/) when the target work matches or
+resembles that example.
 
 ## Core Rule
 

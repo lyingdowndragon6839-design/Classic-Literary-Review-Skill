@@ -15,15 +15,15 @@
 
 ## Common Angles
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Underused Angles
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## Disagreements
 
@@ -39,11 +39,10 @@
 
 ## Risks To Avoid
 
-- 
+-
 
 ## Possible Main Thesis
 
-1. 
-2. 
-3. 
-
+1.
+2.
+3.

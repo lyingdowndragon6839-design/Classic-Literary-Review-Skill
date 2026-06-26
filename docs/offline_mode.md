@@ -30,4 +30,3 @@ Use this note:
 - Do not say “检索发现”.
 - Do not present current online consensus.
 - Do not claim high confidence on obscure facts.
-
