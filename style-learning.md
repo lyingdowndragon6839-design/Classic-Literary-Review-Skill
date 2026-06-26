@@ -1,6 +1,6 @@
 # Style Learning
 
-这个文件是风格学习的快捷入口。完整模块见 [modules/style-learning.md](modules/style-learning.md)。
+风格学习的快捷入口。完整执行手册见 [modules/style-learning.md](modules/style-learning.md)。
 
 ## 原则
 

@@ -1,6 +1,6 @@
-# 工作流程
+# Workflow
 
-读后感写作不是从“成稿”开始，而是从一串可检查的小决定开始：读到了什么、
+读后感写作不从"成稿"开始，而是从一串可检查的小决定开始：读到了什么、
 要抓住哪个判断、哪些情节能支撑它、哪些表达需要删掉。
 
 ## Agent 协作
@@ -29,7 +29,7 @@ flowchart TD
 | Writer Agent | 写初稿 | Outline、Style Bank | Draft | 初稿没有用户声音 |
 | Reviewer Agent | 挑结构和文学问题 | Draft | Reviewer Notes | 问题属于主判断层面 |
 | Humanization Agent | 改节奏、细节和 AI 味 | Draft、Reviewer Notes | Revised Draft | 文字仍像生成 |
-| Final QA Agent | 做提交前检查 | Revised Draft | Final Essay | 逻辑断裂或场景不匹配 |
+| Final QA Agent | 提交前检查 | Revised Draft | Final Essay | 逻辑断裂或场景不匹配 |
 
 ## 分步契约
 
@@ -49,7 +49,7 @@ flowchart TD
 | 12 | Revised Draft | 检查 AI 痕迹和逻辑跳跃 | Revision Report |
 | 13 | Revision Report | 按提交场景润色 | Final Essay |
 
-## 读后感专用流程
+## 专用流程
 
 ```mermaid
 sequenceDiagram
@@ -71,7 +71,7 @@ sequenceDiagram
 
 ### 用户有真实阅读体验
 
-优先保留。比如“我读到老牛那里很难受”，比“生命意义”这种大词更有价值。
+优先保留。"我读到老牛那里很难受"比"生命意义"这种大词更有价值。
 外部评论可以帮助深化这句话，但不能盖住它。
 
 ### 用户没有读完书

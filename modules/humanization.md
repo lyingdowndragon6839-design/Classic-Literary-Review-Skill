@@ -1,51 +1,50 @@
-# Humanization Module
+# Humanization
 
-## Rule
+降低 AI 味不是换几个词，而是模拟一个认真的写作者会怎样重读、怀疑、删减、
+重排和锐化自己的文字。
 
-Run at least eight passes before final delivery.
+## 规则
 
-Humanization does not mean adding random colloquial words. It means simulating h
-ow a serious human writer would reread, doubt, cut, rearrange, and sharpen a pie
-ce.
+交付前至少执行八个轮次。
 
-## Eight Required Passes
+## 八个轮次
 
-| Pass | Operation | Required Action |
+| 轮次 | 操作 | 具体动作 |
 |---:|---|---|
-| 1 | Delete template connectors | Remove “首先、其次、最后、总而言之、由此可见” |
-| 2 | Break sentence uniformity | Mix short judgments with longer analysis |
-| 3 | Adjust paragraph length | Avoid same-size blocks |
-| 4 | Reduce abstraction | Replace big nouns with scenes, actions, objects |
-| 5 | Add reading psychology | Insert real reading process moments |
-| 6 | Reduce explanation | Convert over-explaining into observation |
-| 7 | Add rhythm shifts | Use silence, return, question, and pause |
-| 8 | Literary editor rewrite | Rewrite from the view of a demanding editor |
+| 1 | 删除模板连接词 | 移除"首先、其次、最后、总而言之、由此可见" |
+| 2 | 打散句式 | 短判断与长分析交替 |
+| 3 | 调整段落长度 | 避免每段长度相同 |
+| 4 | 减少抽象词 | 用场景、动作、物件替代大词 |
+| 5 | 加入阅读心理 | 插入真实的阅读过程时刻 |
+| 6 | 减少解释 | 把过度解释改成观察 |
+| 7 | 加入节奏变化 | 使用停顿、回返、疑问、静默 |
+| 8 | 文学编辑改写 | 以苛刻编辑的视角重写 |
 
-## Reading Psychology Lines
+## 阅读心理句
 
-Use sparingly:
+少量使用，不要过度：
 
-- “我第一次读到这里时……”
-- “后来重读，我才意识到……”
-- “直到结尾，我才明白……”
-- “这也是我第二次读时才感到不安的地方……”
-- “起初我以为这是……，但后面那一幕把这个判断推翻了。”
+- "我第一次读到这里时……"
+- "后来重读，我才意识到……"
+- "直到结尾，我才明白……"
+- "这也是我第二次读时才感到不安的地方……"
+- "起初我以为这是……，但后面那一幕把这个判断推翻了。"
 
 ## Human Texture Checklist
 
-- Some sentences carry uncertainty without becoming weak.
-- Some paragraphs end on observation rather than summary.
-- Not every insight is balanced.
-- Not every transition is announced.
-- There is at least one rereading moment.
-- There is at least one concrete object, scene, or gesture that returns later.
+- 有些句子带着不确定感，但不显弱
+- 有些段落停在观察上，而不是总结
+- 不是每个洞察都两端平衡
+- 不是每个转场都被预告
+- 至少有一个重读发现
+- 至少有一个具体的物件、场景或动作在文章后段回响
 
-## If It Still Sounds Like AI
+## 如果仍然像 AI
 
-Do not apologize. Rewrite again:
+不要道歉。重新改：
 
-1. Remove the smoothest paragraph.
-2. Replace it with a scene-based paragraph.
-3. Cut one abstract conclusion.
-4. Add one difficult, specific judgment.
-5. Rerun [ai-check.md](ai-check.md).
+1. 删掉最顺滑的段落
+2. 换成场景驱动的段落
+3. 砍掉一处抽象总结
+4. 加入一个更难、更具体的判断
+5. 跑一遍 [ai-check.md](ai-check.md)

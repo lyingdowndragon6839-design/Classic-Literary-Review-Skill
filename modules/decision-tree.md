@@ -1,93 +1,92 @@
 # Decision Tree
 
-Use this file when the user request is unclear, incomplete, or not a standard “
-write a full reading response” task.
+当用户请求不清楚、不完整，或不是标准的"写一篇完整读后感"时，使用这个文件。
 
-## Main Routing
+## 主路由
 
 ```mermaid
 flowchart TD
-    A["User asks for reading response"] --> B{"Has the user finished the book?"}
-    B -- "No" --> C["Build reading frame; do not fake completion"]
-    B -- "Yes" --> D{"Does the user have feelings or notes?"}
-    D -- "No / very little" --> E["Search and offer angles first"]
-    D -- "Yes" --> F["Preserve user's feeling as primary clue"]
-    F --> G{"Does the user have a draft?"}
-    E --> H["Generate candidate main judgments"]
-    G -- "Yes" --> I["Revision-first workflow"]
-    G -- "No" --> H
-    H --> J{"Target scene?"}
-    J -- "Classroom" --> K["Clear structure, moderate voice"]
-    J -- "Zhihu" --> L["Sharper opening, argument-forward"]
-    J -- "Douban" --> M["Personal reading texture"]
-    J -- "Public account" --> N["Polished essay rhythm"]
-    K --> O["Outline -> Draft -> Review -> AI Check"]
+    A["用户请求写读后感"] --> B{"用户是否读完了书？"}
+    B -- "否" --> C["建立阅读框架；不伪装读完"]
+    B -- "是" --> D{"用户是否有感受或笔记？"}
+    D -- "否 / 很少" --> E["先搜索并提供角度选项"]
+    D -- "是" --> F["保留用户感受作为首要线索"]
+    F --> G{"用户是否有草稿？"}
+    E --> H["生成候选主判断"]
+    G -- "是" --> I["改稿优先流程"]
+    G -- "否" --> H
+    H --> J{"提交场景？"}
+    J -- "课堂" --> K["结构清楚，语气适中"]
+    J -- "知乎" --> L["开头锋利，论证优先"]
+    J -- "豆瓣" --> M["个人阅读质感"]
+    J -- "公众号" --> N["文章节奏完整"]
+    K --> O["Outline → Draft → Review → AI Check"]
     L --> O
     M --> O
     N --> O
-    I --> P["Preserve intent -> repair logic -> reduce AI trace"]
+    I --> P["保留原意 → 修复逻辑 → 降低 AI 痕迹"]
     P --> O
 ```
 
-## Common Cases
+## 常见情况
 
-### User Has Not Finished The Book
+### 用户没有读完书
 
-Do:
+应该做的：
 
-- build a character and conflict map;
-- list questions to watch while reading;
-- suggest possible angles after finishing.
+- 建立人物和冲突地图
+- 列出阅读时要注意的问题
+- 建议读完后的可能角度
 
-Do not:
+不应该做的：
 
-- write “读完整本书后我觉得”;
-- invent personal reading reactions.
+- 写"读完整本书后我觉得"
+- 编造个人阅读感受
 
-### User Has Only One Feeling
+### 用户只有一个感受
 
-One feeling is enough. Treat it as a seed.
+一个感受就够了。把它当成种子。
 
 ```text
 我最难受的是福贵最后只剩老牛。
 ```
 
-Turn it into:
+转换成：
 
 ```text
-Main judgment: 《活着》不是把苦难写成伟大，而是写人被磨空以后仍然还在活着。
+主判断：《活着》不是把苦难写成伟大，而是写人被磨空以后仍然还在活着。
 ```
 
-### User Already Has A Draft
+### 用户已有草稿
 
-Start with editing, not rewriting.
+从编辑开始，不从重写开始。
 
-| Step | Action |
+| 步骤 | 动作 |
 |---|---|
-| 1 | Identify the user's main intent |
-| 2 | Mark AI cliches and empty claims |
-| 3 | Repair logic and evidence |
-| 4 | Preserve voice |
-| 5 | Produce a revised version |
+| 1 | 识别用户的主要意图 |
+| 2 | 标记 AI 套话和空泛主张 |
+| 3 | 修复逻辑和证据 |
+| 4 | 保留声音 |
+| 5 | 产出修改版 |
 
-### User Wants “降 AI”
+### 用户只想降 AI 味
 
-Look beyond phrases:
+不只是换词。要看的包括：
 
-- sentence rhythm;
-- paragraph shape;
-- plot-to-judgment connection;
-- generic ending;
-- missing reading process.
+- 句子节奏
+- 段落形状
+- 剧情到判断的连接
+- 泛化结尾
+- 缺失的阅读过程
 
-### User Needs Classroom Submission
+### 课堂提交
 
-Keep it clear. Do not over-style.
+保持清楚即可，不要过度风格化。
 
-Good classroom reading responses usually have:
+好的课堂读后感通常有：
 
-- one main judgment;
-- a few concrete details;
-- moderate personal voice;
-- no internet slang;
-- no empty moral ending.
+- 一个主判断
+- 几个具体细节
+- 适度的个人声音
+- 没有网络用语
+- 没有空洞道德结尾

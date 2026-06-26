@@ -1,6 +1,7 @@
 # Revision
 
-这个文件是改稿流程的快捷入口。完整模块见 [modules/revision.md](modules/revision.md) 和 [modules/humanization.md](modules/humanization.md)。
+改稿流程的快捷入口。完整执行手册见 [modules/revision.md](modules/revision.md)
+和 [modules/humanization.md](modules/humanization.md)。
 
 ## 改稿顺序
 

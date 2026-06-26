@@ -1,11 +1,9 @@
-# GitHub Prompt Learning Module
+# Prompt Learning
 
-## Purpose
+动笔之前，从公开 GitHub prompt 仓库学习工作流设计。目标是改进 Agent 流程，
+不是复制 prompt 文本。
 
-Before writing, learn from public GitHub prompt repositories as workflow referen
-ces. The goal is to improve agent design, not to copy prompt text.
-
-## Required Search Keywords
+## 搜索关键词
 
 ```text
 writing prompt
@@ -21,62 +19,61 @@ style transfer
 ai writing
 ```
 
-## What To Study
+## 学什么
 
-| Component | What To Extract |
+| 组件 | 提取什么 |
 |---|---|
-| Workflow design | How the prompt decomposes work into stages |
-| Prompt structure | Role, task, constraints, process, output |
-| Few-shot examples | What examples demonstrate and how compact they are |
-| Constraint design | What the prompt forbids and how it enforces rules |
-| Self Reflection | How it asks the model to critique its own draft |
-| Rubric | How quality is scored |
-| Agent Workflow | How multiple roles or passes coordinate |
+| 工作流设计 | prompt 如何把任务拆成阶段 |
+| Prompt 结构 | 角色、任务、约束、流程、输出 |
+| Few-shot 示例 | 示例展示了什么、有多精简 |
+| 约束设计 | prompt 禁止什么、如何执行规则 |
+| 自我反思 | 模型如何被要求审视自己的草稿 |
+| 评分标准 | 质量如何被衡量 |
+| Agent 协作 | 多个角色或轮次如何协调 |
 
-## What Not To Do
+## 不做什么
 
-- Do not copy prompt text.
-- Do not preserve distinctive phrasing.
-- Do not import unrelated productivity workflows.
-- Do not treat GitHub stars as proof of writing quality.
+- 不复制 prompt 文本
+- 不保留独特的措辞
+- 不引入无关的生产力工作流
+- 不把 GitHub star 当成写作质量的证明
 
-## Prompt Design Summary Template
+## Prompt 设计总结模板
 
 ```markdown
 ## Prompt Design Summary
 
-### Repositories Reviewed
+### 审查过的仓库
 
-| Repository | Relevant Pattern | What Was Learned | Used In This Run |
+| 仓库 | 相关模式 | 学到了什么 | 本轮使用 |
 |---|---|---|---|
 
-### Workflow Lessons
+### 工作流经验
 
 - ...
 
-### Constraint Lessons
+### 约束经验
 
 - ...
 
-### Reflection Lessons
+### 反思经验
 
 - ...
 
-### Rubric Lessons
+### 评分标准经验
 
 - ...
 
-### Adaptation Decision
+### 适配决定
 
-This run will use:
+本轮将使用：
 
 1. ...
 2. ...
 3. ...
 ```
 
-## Integration Rule
+## 整合规则
 
-Prompt learning can improve the Agent's process, but it must not override litera
-ry research. The final article must be grounded in the target work and research
-summary, not in generic prompt tricks.
+Prompt 学习可以改进 Agent 的流程，但不能覆盖文学研究。
+最终文章必须扎根于目标作品和 Research Summary，不是通用的 prompt 技巧。

@@ -1,57 +1,56 @@
 # Revision
 
-Revision is where a generated-looking draft becomes a piece of writing.
+改稿是把一篇看起来像生成的初稿变成一篇真正的文章。
 
-The first draft usually explains too much, summarizes too often, and ends too ne
-atly. Revision creates pressure: what can be cut, what needs a scene, where the
-user's own voice should return.
+初稿通常解释过多、总结过频、结尾过圆。改稿的任务是制造压力：什么可以删、
+什么地方需要场景、哪里的声音应该还给用户。
 
-## Revision Passes
+## 改稿轮次
 
-| Pass | Question | Action |
+| 轮次 | 问题 | 动作 |
 |---:|---|---|
-| 1 | Where is the draft only retelling plot? | Cut or turn into evidence |
-| 2 | Where does the draft use large words without detail? | Replace with scene, gesture, object |
-| 3 | Where does every paragraph sound the same? | Vary length and rhythm |
-| 4 | Where is the user's reading feeling missing? | Add a real reading turn |
-| 5 | Where does the logic jump? | Add the missing bridge |
-| 6 | Where is the ending too neat? | Return to a concrete unresolved image |
+| 1 | 哪里只是复述剧情？ | 删掉或改成证据 |
+| 2 | 哪里用大词代替细节？ | 用场景、动作、物件替代 |
+| 3 | 哪里每段听起来一样？ | 改变段落长度和节奏 |
+| 4 | 哪里用户感受缺失？ | 加入真实的阅读转折 |
+| 5 | 哪里逻辑跳跃？ | 补上缺失的推理桥段 |
+| 6 | 哪里结尾太圆？ | 回到一个具体、未解决的画面 |
 
-## Revision Report Template
+## Revision Report 模板
 
 ```markdown
 ## Revision Report
 
-### Main Fix
+### 主要修改
 
-### Cuts
+### 删减
 
-| Removed | Why |
+| 删掉的内容 | 原因 |
 |---|---|
 
-### Added Detail
+### 补充的细节
 
-| Detail | Purpose |
+| 细节 | 目的 |
 |---|---|
 
-### Logic Repairs
+### 逻辑修复
 
-| Problem | Repair |
+| 问题 | 修复 |
 |---|---|
 
-### Voice Repairs
+### 声音修复
 
-| Problem | Repair |
+| 问题 | 修复 |
 |---|---|
 
-### Remaining Risk
+### 剩余风险
 ```
 
-## When To Restart
+## 什么时候重来
 
-Restart from the main judgment if:
+从主判断阶段重新开始，如果：
 
-- the draft has two or more centers;
-- the best paragraph does not support the thesis;
-- the article could be reused for another book with only the title changed;
-- the ending depends on “启示、意义、光辉” rather than a concrete recognition.
+- 初稿有两个或更多中心
+- 最好的段落不支持主判断
+- 换一本书名，文章依然成立
+- 结尾依赖"启示、意义、光辉"而不是具体认识
